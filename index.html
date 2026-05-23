@@ -310,24 +310,6 @@
 
     @keyframes swimRight {
       0% {
-        transform: translateX(-200px) translateY(0px) scaleX(1);
-      }
-      25% {
-        transform: translateX(25vw) translateY(-20px) scaleX(1);
-      }
-      50% {
-        transform: translateX(50vw) translateY(15px) scaleX(1);
-      }
-      75% {
-        transform: translateX(75vw) translateY(-10px) scaleX(1);
-      }
-      100% {
-        transform: translateX(120vw) translateY(20px) scaleX(1);
-      }
-    }
-
-    @keyframes swimLeft {
-      0% {
         transform: translateX(120vw) translateY(0px) scaleX(-1);
       }
       25% {
@@ -341,6 +323,23 @@
       }
       100% {
         transform: translateX(-200px) translateY(-20px) scaleX(-1);
+      }
+          }
+    @keyframes swimLeft {
+      0% {
+        transform: translateX(-200px) translateY(0px) scaleX(1);
+      }
+      25% {
+        transform: translateX(25vw) translateY(-20px) scaleX(1);
+      }
+      50% {
+        transform: translateX(50vw) translateY(15px) scaleX(1);
+      }
+      75% {
+        transform: translateX(75vw) translateY(-10px) scaleX(1);
+      }
+      100% {
+        transform: translateX(120vw) translateY(20px) scaleX(1);
       }
     }
 
@@ -492,8 +491,8 @@
     const player = new Audio();
     const bgMusic = document.getElementById('background-music');
 
-    bgMusic.volume = 0.8;
-    bgMusic.playbackRate = 0.8;
+    bgMusic.volume = 1;
+    bgMusic.playbackRate = 1;
 
     const albumArt = document.getElementById('album-art');
 
